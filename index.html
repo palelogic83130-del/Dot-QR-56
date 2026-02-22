@@ -10,8 +10,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
   
   <script src="https://cdnjs.cloudflare.com/ajax/libs/qrious/4.0.2/qrious.min.js"></script>
-  <script type="module" crossorigin src="/Dot-QR-56/assets/index-d36f5ac7.js"></script>
-  <link rel="stylesheet" href="/Dot-QR-56/assets/index-927b7fdc.css">
+  <script type="module" crossorigin src="/Dot-QR-56/assets/index-7c2aea66.js"></script>
+  <link rel="stylesheet" href="/Dot-QR-56/assets/index-bfdcfb3c.css">
 </head>
 
 <body>
@@ -21,7 +21,7 @@
     </header>
     <main>
       <div class="editor-container">
-        <canvas id="editor-canvas" width="448" height="448"></canvas>
+        <canvas id="editor-canvas" width="384" height="512"></canvas>
       </div>
       <aside class="controls">
         <!-- Drawing Tools Section -->
@@ -57,6 +57,8 @@
           </div>
 
           <div class="tool-group tool-actions">
+            <button id="undo-btn" class="icon-btn-large" title="Undo (Ctrl+Z)">↩️ Undo</button>
+            <button id="redo-btn" class="icon-btn-large" title="Redo (Ctrl+Y)">↪️ Redo</button>
             <button id="clear-btn" class="clear-btn">🗑️ Clear All</button>
             <button id="preview-btn" class="preview-btn">👁️ Preview</button>
           </div>
