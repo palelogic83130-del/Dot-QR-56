@@ -10,14 +10,14 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
   
   <script src="https://cdnjs.cloudflare.com/ajax/libs/qrious/4.0.2/qrious.min.js"></script>
-  <script type="module" crossorigin src="/Dot-QR-56/assets/index-7c2aea66.js"></script>
-  <link rel="stylesheet" href="/Dot-QR-56/assets/index-bfdcfb3c.css">
+  <script type="module" crossorigin src="/Dot-QR-56/assets/index-93bcf530.js"></script>
+  <link rel="stylesheet" href="/Dot-QR-56/assets/index-79ced705.css">
 </head>
 
 <body>
   <div id="app">
     <header>
-      <h1>Dot-QR <span class="accent">56</span></h1>
+      <h1 data-i18n="title">Dot-QR <span class="accent">56</span></h1>
     </header>
     <main>
       <div class="editor-container">
@@ -26,41 +26,42 @@
       <aside class="controls">
         <!-- Drawing Tools Section -->
         <section class="tool-section" id="drawing-tools">
-          <h2 class="section-title">🎨 Drawing Tools</h2>
+          <h2 class="section-title" data-i18n="drawing_tools">🎨 Drawing Tools</h2>
 
           <div class="tool-group">
-            <label class="tool-label" for="palette-select">Palette</label>
+            <label class="tool-label" for="palette-select" data-i18n="palette">Palette</label>
             <select id="palette-select"></select>
           </div>
 
           <div class="tool-group">
-            <label class="tool-label">Color</label>
+            <label class="tool-label" data-i18n="color">Color</label>
             <div id="color-container" class="color-pickers"></div>
           </div>
 
           <div class="tool-group">
-            <label class="tool-label">Tools</label>
+            <label class="tool-label" data-i18n="tools">Tools</label>
             <div id="tool-container" class="drawing-tools-bar"></div>
           </div>
 
           <div class="tool-group">
-            <label class="tool-label">Brush Size</label>
+            <label class="tool-label" data-i18n="brush_size">Brush Size</label>
             <div id="brush-container" class="brush-sizes"></div>
           </div>
 
           <div class="tool-group">
             <label class="tool-label">
-              Symmetry
-              <span class="info-tooltip" title="대칭 모드를 사용하면 절반의 데이터만 저장하여 URL 길이를 크게 줄일 수 있습니다.">ⓘ</span>
+              <span data-i18n="symmetry">Symmetry</span>
+              <span class="info-tooltip" data-i18n-hint="symmetry_hint"
+                title="대칭 모드를 사용하면 절반의 데이터만 저장하여 URL 길이를 크게 줄일 수 있습니다.">ⓘ</span>
             </label>
             <div id="symmetry-container"></div>
           </div>
 
           <div class="tool-group tool-actions">
-            <button id="undo-btn" class="icon-btn-large" title="Undo (Ctrl+Z)">↩️ Undo</button>
-            <button id="redo-btn" class="icon-btn-large" title="Redo (Ctrl+Y)">↪️ Redo</button>
-            <button id="clear-btn" class="clear-btn">🗑️ Clear All</button>
-            <button id="preview-btn" class="preview-btn">👁️ Preview</button>
+            <button id="undo-btn" class="icon-btn-large" data-i18n="undo" title="Undo (Ctrl+Z)">↩️ Undo</button>
+            <button id="redo-btn" class="icon-btn-large" data-i18n="redo" title="Redo (Ctrl+Y)">↪️ Redo</button>
+            <button id="clear-btn" class="clear-btn" data-i18n="clear_all">🗑️ Clear All</button>
+            <button id="preview-btn" class="preview-btn" data-i18n="preview">👁️ Preview</button>
           </div>
         </section>
 
@@ -73,13 +74,13 @@
     <div id="qr-modal" class="modal-overlay" style="display: none;">
       <div class="modal-content">
         <button id="close-modal-btn" class="modal-close">&times;</button>
-        <h2 class="modal-title">📱 Share Image</h2>
+        <h2 class="modal-title" data-i18n="share_title">📱 Share Image</h2>
         <div class="qr-container-large">
           <canvas id="qr-code-large"></canvas>
         </div>
-        <p class="modal-hint">Scan with phone to view or edit</p>
+        <p class="modal-hint" data-i18n="share_hint">Scan with phone to view or edit</p>
         <div class="modal-actions">
-          <button id="modal-copy-link-btn" class="primary-btn">🔗 Copy Link</button>
+          <button id="modal-copy-link-btn" class="primary-btn" data-i18n="copy_link">🔗 Copy Link</button>
         </div>
       </div>
     </div>
@@ -87,7 +88,7 @@
     <!-- Analysis Tools Section -->
     <section class="tool-section" id="analysis-tools">
       <div class="section-header">
-        <h2 class="section-title">📊 Analysis</h2>
+        <h2 class="section-title" data-i18n="analysis">📊 Analysis</h2>
         <button id="toggle-analysis-btn" class="icon-btn" title="Show Analysis">▲</button>
       </div>
       <div id="analysis-content" class="collapsed">
